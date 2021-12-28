@@ -1,0 +1,177 @@
+html {
+	font-size: 16px;
+}
+
+body {
+	font-family: 'Montserrat', Helvetica, Arial, sans-serif;
+	font-size: 1em;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-flow: column nowrap;
+}
+
+.container{
+	max-width: 1200px;
+	width: 90%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-flow: row wrap;
+}
+
+h1,
+h2,
+h3 {
+	color: black;
+	text-transform: uppercase;
+	font-weight: 700;
+}
+h1 {
+	font-size: 2em;
+}
+h2 {
+	font-size: 1.125em;
+}
+h3 {
+	font-size: .75em;
+}
+
+p {
+	font-size: .875em;
+	line-height: 1.3125em;
+    padding: 0 0;
+}
+
+/*The widths are in a percentage!*/
+header {
+	
+	margin: 0 auto;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-flow: column wrap;
+}
+
+header h1 {
+	margin: 40px 0 0 0;
+	padding: 40px 0 10px 0;
+	border-bottom: 3px solid #77a466;
+}
+header h1 span {
+	color: #77a466;
+}
+
+header nav {
+	padding: 20px 0;
+}
+header nav ul {
+	margin: 0;
+	padding: 0;
+}
+header nav ul li {
+	text-transform: uppercase;
+	font-weight: 700;
+	font-size: .875em;
+	padding: 0 10px;
+	list-style: none;
+	display: flex;
+	justify-content: center;
+	
+
+}
+header nav ul li a{
+	text-decoration: none;
+	color:#77a466;
+	padding: 10px 0;
+}
+
+/*The widths are in a percentage!*/
+.top-section, 
+.bottom-section {
+	margin: 0 auto;
+}
+
+
+.main-image {
+	
+}
+.main-image img {
+	width: 100%;
+	border-bottom: 3px solid #77a466;
+}
+
+.main-title {
+	
+}
+.main-title h2 {
+	text-align: left;
+	padding: 5px 0;
+	color: #77a466;
+}
+.main-title p {
+	padding: 0;
+	font-size: 1em;
+	line-height: 1.5625em;
+}
+
+.section-one,
+.section-two,
+.section-three {
+	width: auto;
+	border-top: 1px solid #eee;
+}
+
+.section-one h3 {
+	padding: 10px 0;
+}
+
+.section-two {
+	
+}
+
+.section-two h3,
+.section-three h3 {
+	padding: 10px 0;
+}
+
+.menu {
+	list-style: none;
+	padding: 0;
+}
+.menu li {
+	padding: 10px 0;
+	color:#77a466;
+}
+
+.reviews {
+	color: #333;
+	font-size: 1em;
+	line-height: 1.3125em;
+}
+
+.address {
+	font-size: 1em;
+	line-height: 1.5em;
+}
+
+/*The widths are in a percentage!*/
+footer {
+	border-top: 3px solid #eee;
+	margin: 0 0;
+	width: 90%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+footer span {
+	font-family: 'Galada', cursive;
+	text-transform: lowercase;
+	color: #77a466;
+	font-size: .875em;
+}
+
+/*----- PHONE -----*/
+@media (max-width: 480px) {
+
+}
