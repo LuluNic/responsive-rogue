@@ -8,6 +8,7 @@ body {
 	display: flex;
 	justify-content: center;
 	align-items: center;
+	/*-----below not part of solution code-----*/
 	flex-flow: column nowrap;
 }
 
@@ -28,7 +29,7 @@ h3 {
 	font-weight: 700;
 }
 h1 {
-	font-size: 2em;
+	font-size: 1.875em;
 }
 h2 {
 	font-size: 1.125em;
@@ -39,24 +40,38 @@ h3 {
 
 p {
 	font-size: .875em;
+	line-height: 21px;
+	/*-----below not part of solution code-----*/
 	line-height: 1.3125em;
     padding: 0 0;
 }
 
+/*-----solution code
+ul {
+	margin: 0; -----*/
+}
 /*The widths are in a percentage!*/
 header {
-	
-	margin: 0 auto;
+	/*----- adding per solution -----*/
+	border-bottom: 3px solid #77a466;
+	width: 100%;
+	/*------margin: 0 auto;-----*/
 	display: flex;
 	justify-content: center;
 	align-items: center;
+	/*-----below part of solution code
+	flex-flow: row wrap; -----*/
 	flex-flow: column wrap;
 }
 
 header h1 {
+	/*----- solution 
+	margin: 0;
+	padding: 38px 20px 20px 20px; -----*/
+	width: 100%;
+	/*-----below not part of solution code
 	margin: 40px 0 0 0;
-	padding: 40px 0 10px 0;
-	border-bottom: 3px solid #77a466;
+	padding: 40px 0 10px 0;-----*/
 }
 header h1 span {
 	color: #77a466;
@@ -64,6 +79,7 @@ header h1 span {
 
 header nav {
 	padding: 20px 0;
+	width: 100%;
 }
 header nav ul {
 	margin: 0;
@@ -73,37 +89,40 @@ header nav ul li {
 	text-transform: uppercase;
 	font-weight: 700;
 	font-size: .875em;
+	/*----- PADDING REVERSED BASED ON SOLUTION. INPUT 0 10PX, CORRECT 10PX 0 -----*/
 	padding: 0 10px;
 	list-style: none;
+	/*-----below not part of solution code-----*/
 	display: flex;
-	justify-content: center;
-	
-
+	justify-content: center; 
 }
-header nav ul li a{
+
+header nav ul li a { 
 	text-decoration: none;
 	color:#77a466;
-	padding: 10px 0;
+	/*-----below not part of solution code-----*/
+	padding: 10px 0; 
 }
 
 /*The widths are in a percentage!*/
 .top-section, 
 .bottom-section {
+	/*-----below not part of solution code-----*/
 	margin: 0 auto;
+	/*----- PART OF SOLUTION 
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-flow: row wrap; -----*/
 }
 
 
-.main-image {
-	
-}
 .main-image img {
 	width: 100%;
 	border-bottom: 3px solid #77a466;
 }
 
-.main-title {
-	
-}
+
 .main-title h2 {
 	text-align: left;
 	padding: 5px 0;
@@ -118,22 +137,19 @@ header nav ul li a{
 .section-one,
 .section-two,
 .section-three {
-	width: auto;
+	/*----- WIDTH NOT AUTO, WIDTH = 100% AS PER SOLUTION -----*/
+	width: 100%;
 	border-top: 1px solid #eee;
 }
 
 .section-one h3 {
-	padding: 10px 0;
+/*-----below not part of solution code-----*/
+	padding: 10px 0; 
 }
-
-.section-two {
-	
-}
-
 .section-two h3,
 .section-three h3 {
 	padding: 10px 0;
-}
+} 
 
 .menu {
 	list-style: none;
@@ -158,11 +174,13 @@ header nav ul li a{
 /*The widths are in a percentage!*/
 footer {
 	border-top: 3px solid #eee;
-	margin: 0 0;
-	width: 90%;
+	/*----- NO MARGIN IN SOLUTION, WIDTH IS 100% NOT 90%, ADDING FLEX-FLOW: ROW WRAP; -----*/
+	margin: 0 0; 
+	width: 100%;
 	display: flex;
 	justify-content: center;
 	align-items: center;
+	flex-flow: row wrap;
 }
 footer span {
 	font-family: 'Galada', cursive;
@@ -171,7 +189,85 @@ footer span {
 	font-size: .875em;
 }
 
-/*----- PHONE -----*/
-@media (max-width: 480px) {
+/*----- TABLET -----*/
+@media all and (min-width:768px) {
+	
+	.bottom-section {
+		display: flex;
+		justify-content: space-between;
+		align-items: flex-start;	
+		/*----- ADDING BORDER AS PER SOLUTION -----*/
+		border-top: 1px solid #eee;
+	}
 
+
+	.section-one {
+		justify-content: start;
+		align-content: center;
+		flex-basis: 33%;
+	}
+	.section-two {
+		justify-content: center;
+		align-content: center;
+		border-left: 1px solid #eee;
+		border-right: 1px solid #eee;
+		flex-basis: 33%;
+	}
+	.section-three {
+		justify-content: center;
+		align-content: center;
+		flex-basis: 33%;
+	} 
+
+	/*-----below part of solution code
+	.section-one, 
+	.section-two, 
+	.section-three {
+		border-top: none;
+		flex-basis: 30%;
+	}
+
+	.section-two {
+		border-left: 1px solid #eee;
+		border-right: 1px solid #eee;
+		padding: 0 20px;
+	} -----*/
+}
+/*----- DESKTOP -----*/
+@media all and (min-width:1200px) {
+	header {
+		/*-----below not part of solution code-----*/
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		flex: 1 0 60%;
+		width: 100%;
+		padding: 10px;
+		border-bottom: 3px solid #77a466;
+		/*-----below part of solution code
+		justify-content: space-between; -----*/
+	}
+
+	header h1 {
+		width: 30%;
+		padding: 0;
+		border-bottom: none;
+		text-align: left;
+	}
+
+	header nav {
+		width: 40%;
+		display: flex;
+		flex: .25 0 40%;
+	}
+
+	header nav ul {
+		display: flex;
+		justify-content: space-between;
+	}
+	
+	.section-two, 
+	.section-three {
+		padding: 0 10px;
+	}
 }
